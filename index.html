@@ -35,8 +35,8 @@
             function updateText()
             {
                 var nextChar = words[word_counter][character_counter++];
-                if(nextChar == " ") {
-                    nextChar = "&nbsp;";
+                if(nextChar == " ") { // checks to see if the space is a space
+                    nextChar = "&nbsp;"; // and sets it to be recognized as a space
                 }
                 el.innerHTML = el.innerHTML+nextChar;
                 if(character_counter == words[word_counter].length){
